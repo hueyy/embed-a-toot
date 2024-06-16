@@ -22,7 +22,9 @@ export const templateHtml = html`
 	<main>${TemplateDataKey.contentHtml}</main>${
 		TemplateDataKey.attachedMedia}
 	<footer>
-		<time datetime="${TemplateDataKey.dateTimeIso}" class="${TemplateClass.postTime}">${TemplateDataKey.dateTimeText}</time>
+		<a href="${TemplateDataKey.repliesLink}" class="${TemplateClass.postLink}">
+			<time datetime="${TemplateDataKey.dateTimeIso}" class="${TemplateClass.postTime}" title="${TemplateDataKey.dateTimeIso}">${TemplateDataKey.dateTimeText}</time>
+		</a>
 		<time ${TemplateDataKey.hiddenIfNotEdited}datetime="${TemplateDataKey.editedDateTimeIso}" class="${TemplateClass.editTime}">edited at ${TemplateDataKey.editedDateTimeText}</time>
 		<a href="${TemplateDataKey.favoritesLink}" title="favourites" class="${TemplateClass.counterFavourites}">${TemplateDataKey.favoritesCount}</a>
 		<a href="${TemplateDataKey.reblogsLink}" title="reblogs" class="${TemplateClass.counterReblogs}">${TemplateDataKey.reblogsCount}</a>

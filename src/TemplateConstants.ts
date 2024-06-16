@@ -44,6 +44,7 @@ export const TemplateClass = {
 	postAuthorsFediverseUsername: "post-authors-fediverse-username",
 	postAuthorsFediverseServer: "post-authors-fediverse-server",
 	postTime: "post-time",
+	postLink: "post-link",
 	atSymbol: "at-symbol",
 	usernameAtSymbol: "username-at-symbol",
 	serverAtSymbol: "server-at-symbol",
