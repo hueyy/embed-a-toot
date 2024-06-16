@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,50 +14,60 @@
         align-items: center;
         justify-content: flex-start;
       }
+
       .form-element {
         margin-bottom: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: start;
       }
+
       .form-element-checkbox {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
       }
+
       /* .form-element label, .form-element-checkbox label {
         font-size: 0.8rem;
       } */
       .form-element-checkbox label {
         margin-left: 0.5rem;
       }
+
       #tootUrlTextInput {
         background-color: yellow;
       }
-      textarea, input[type=text] {
+
+      https: //uppajung.github.io/embed-a-toot
+
+      textarea,
+      input[type=text] {
         width: 50rem;
         max-width: 80vw;
       }
     </style>
   </head>
+
   <body>
     <div>
       <h2>Embed-a-Toot: Content-Inclusive Embedding for Mastodon</h2>
-      <p>Open-source toot embedding by that you can contribute to on <a href="https://github.com/uppajung/embed-a-toot/">Github</a>.
-        <br/>If you want content-inclusive built into Mastodon, support my <a href="https://github.com/mastodon/mastodon/issues/27626">Mastodon feature request</a>.
+      <p>Open-source toot embedding by that you can contribute to on <a href="https://hueyy.github.io/embed-a-toot/">Github</a>.
+        <br />If you want content-inclusive built into Mastodon, support my <a href="https://github.com/mastodon/mastodon/issues/27626">Mastodon feature
+          request</a>.
       </p>
       <script id="tootScript"></script>
       <div class="form-element" style="margin-bottom: 2rem; margin-top: 2rem;">
         <label for="tootUrlTextInput">URL of Toot</label>
-        <input id="tootUrlTextInput" type="text"/>
+        <input id="tootUrlTextInput" type="text" />
       </div>
       <div class="form-element">
         <label for="embeddedCssContainer">Style sheet</label>
         <select id="selectStyleSheet"></select>
       </div>
       <div class="form-element">
-        <label for="embeddedCssContainer">CSS, 
+        <label for="embeddedCssContainer">CSS,
           download from <a id="downloadCssLink"></a> or copy from below, add to &lt;style&gt; element above embedded post or link via a .css file</label>
         <textarea id="embeddedCssContainer" cols="80" rows="2" readonly="true" spellcheck="false"></textarea>
       </div>
@@ -80,7 +91,8 @@
         <label for="noCounterUpdates">Do not update the counts of favorites, re-blogs, and responses</label>
       </div>
       <div class="form-element" id="embeddedScriptContainerBlock">
-        <label for="embeddedScriptContainer">JavaScript to automatically update toots (or download it <a href="./updated-embedded-posts.js">minified</a> or <a href="./updated-embedded-posts-debug.js">non-minified</a>)
+        <label for="embeddedScriptContainer">JavaScript to automatically update toots (or download it <a href="./updated-embedded-posts.js">minified</a> or <a
+            href="./updated-embedded-posts-debug.js">non-minified</a>)
         </label>
         <textarea id="embeddedScriptContainer" cols="80" rows="2" readonly="true" spellcheck="false"></textarea>
       </div>
@@ -91,7 +103,9 @@
       </div>
     </div>
     <footer style="margin-top: 2rem;">Brought to you by <a href="https://www.stuartschechter.org/">Stuart Schechter</a>
-      (<a href="https://mastodon.social/@MildlyAggrievedScientist">@MildlyAggrievedScientist@Mastodon.social</a>)
+      (<a href="https://mastodon.social/@MildlyAggrievedScientist">@MildlyAggrievedScientist@Mastodon.social</a>),
+      with some small tweaks by <a href="https://social.ketupat.me/@huey">@me@huey.xyz</a>
     </footer>
   </body>
+
 </html>

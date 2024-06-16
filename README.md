@@ -1,6 +1,6 @@
 # Embed-a-toot
 
-The embed-a-toot page hosted at https://uppajung.github.io/embed-a-toot
+The embed-a-toot page hosted at https://hueyy.github.io/embed-a-toot/
 
 ### Building
 
